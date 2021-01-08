@@ -7,7 +7,7 @@ import os
 from cv2 import cv2
 import pickle
 
-UPLOAD_FOLDER = r'C:\Users\shard\Downloads\Face Detection Model\Unknown Faces'
+UPLOAD_FOLDER = r'Unknown Faces'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 
 app = Flask(__name__)
@@ -52,8 +52,8 @@ def upload_file():
 def run_script():
     li = []
 
-    KNOWN_FACES_DIR = r'C:\Users\shard\Downloads\Face Detection Model\Known Faces'
-    UNKNOWN_FACES_DIR = r'C:\Users\shard\Downloads\Face Detection Model\Unknown Faces'
+    KNOWN_FACES_DIR = r'Known Faces'
+    UNKNOWN_FACES_DIR = r'Unknown Faces'
     TOLERANCE = 0.6
     FRAME_THICKNESS = 3
     FONT_THICKNESS = 2
